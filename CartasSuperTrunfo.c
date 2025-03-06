@@ -36,15 +36,42 @@ int main() {
     printf("Informe a quantidade de Pontos Turísticos:\n");
     scanf("%d", &numTuriste1);
 
-    
+    //Escolha da Carta 2:
+    printf("\n\n-->CARTA N2<--\n");
+    printf("Digite uma letra de A a H representando um dos estados\n");
+    scanf(" %c", &estado2);
+    printf("Digite a letra do estado seguida de um número de 01 a 04 (Ex: A01, B03)\n");
+    scanf("%s", codCard2);
+    printf("Informe o nome da cidade\n");
+    scanf("%s", namecid2);
+    printf("Informe o número de Habitantes\n");
+    scanf("%d", &populacao2);
+    printf("Informe a área da Cidade (km²)\n");
+    scanf("%f", &area2);
+    printf("Informe o (PIB) da Cidade\n");
+    scanf("%f", &pib2);
+    printf("Informe a quantidade de Pontos Turísticos:\n");
+    scanf("%d", &numTuriste2);
+
+    //Respostas CartaN1
     printf("\n\nCARTA N1\n"); 
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codCard1);
     printf("Nome da cidade: %s\n", namecid1);
     printf("População: %d\n", populacao1);
-    printf("Área (em km²): %fkm²\n", area1);
-    printf("PIB: %f bilhões de reais\n", pib1);
+    printf("Área (em km²): %2f km²\n", area1);
+    printf("PIB: %2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", numTuriste1);
+
+    //Respostas CartaN2
+    printf("\n\n\nCARTA N2\n"); 
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codCard2);
+    printf("Nome da cidade: %s\n", namecid2);
+    printf("População: %d\n", populacao2);
+    printf("Área (em km²): %2f km²\n", area2);
+    printf("PIB: %2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", numTuriste2);
 
     return 0;
 }
