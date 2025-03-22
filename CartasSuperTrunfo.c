@@ -3,8 +3,8 @@
 
 
 int main() {
-    //D1: Organização das Var dividias em conjunto 1 e 2
-    //D2: Criação das float para operação matematica densidPop e perCap 
+    // Organização das Var dividias em conjunto 1 e 2
+    // Criação das float para operação matematica densidPop e perCap 
     char    estado1 , estado2;
     char    codCard1[4],  codCard2[4];
     char    namecid1[20], namecid2[20];
@@ -18,10 +18,10 @@ int main() {
     int     resultado;
     
     
-    //D1: Apresentação do Jogo
+    // Apresentação do Jogo
     printf("**Olá sejá bem vindo**\n-----------------------\n SUPER TRUNFO - CIDADES\n-----------------------\n\n");
     
-    //D1: Escolha da Carta 1:
+    // Escolha da Carta 1:
     printf("-->CARTA N1<--\n");
     printf("Digite uma letra de A a H representando um dos estados\n");
     scanf(" %c", &estado1);
@@ -38,7 +38,7 @@ int main() {
     printf("Informe a quantidade de Pontos Turísticos:\n");
     scanf("%d", &numTuriste1);
 
-    //D1: Escolha da Carta 2:
+    // Escolha da Carta 2:
     printf("\n\n-->CARTA N2<--\n");
     printf("Digite uma letra de A a H representando um dos estados\n");
     scanf(" %c", &estado2);
@@ -56,9 +56,10 @@ int main() {
     scanf("%d", &numTuriste2);
 
 
-    //D1: Respostas CartaN1
-    //D2: Nova pergnta sobre Densidade Pop e Pip per capita
-    //D2: Implementado cod para calcular a D. populacional e  PIB per capita.
+    // Respostas CartaN1
+    // Nova pergnta sobre Densidade Pop e Pip per capita
+    // Implementado cod para calcular a D. populacional e  PIB per capita.
+    // Soma de todos os atributos dando o valor de "Super poder"
     printf("\n\nCARTA N1\n"); 
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codCard1);
@@ -74,8 +75,10 @@ int main() {
     soma1 = (float) populacao1 + area1 + pib1 + numTuriste1 + densidPop1 + perCap1;
     printf("Super Poder: %.2f", soma1);
 
-    //D1: Respostas CartaN2
-    //D2: Nova pergnta sobre Densidade Pop e Pip per capita
+    // Respostas CartaN2
+    // Nova pergnta sobre Densidade Pop e Pip per capita
+    // Implementado cod para calcular a D. populacional e  PIB per capita.
+    // Soma de todos os atributos dando o valor de "Super poder"
     printf("\n\n\nCARTA N2\n"); 
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codCard2);
@@ -94,20 +97,54 @@ int main() {
     //Comparação de Cartas:
 
     printf("Comparação de Cartas:\n");
-    resultado = populacao1 > populacao2;
-    printf("População: %d\n", resultado);
-    resultado = area1 > area2;
-    printf("Área:%d\n", resultado);
-    resultado = pib1 > pib2;    
-    printf("PIB: %d\n", resultado);
-    resultado = numTuriste1 > numTuriste2;
-    printf("Pontos Turísticos: %d\n", resultado);
-    resultado = densidPop1 < densidPop2;
-    printf("Densidade Populacional: %d\n", resultado);
-    resultado = perCap1 > perCap2;
-    printf("PIB per Capita: %d\n", resultado);
-    resultado = soma1 > soma2;
-    printf("Super Poder: %d\n", resultado);
+     
+    if (populacao1 > populacao2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }  
+    
+     
+    if ( area1 > area2){
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
+    
+     
+    if (pib1 > pib2){
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
+    
+     
+    if (numTuriste1 > numTuriste2){
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
+    
+     
+    if (densidPop1 < densidPop2){
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
+    
+     
+    if (perCap1 > perCap2){
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
+    
+     
+    if (soma1 > soma2){
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
     
 
     return 0;
